@@ -1,4 +1,4 @@
-# test_catkin_atomic
+# test_catkin_atomic [![Build Status](https://travis-ci.org/k-okada/test_catkin_atomic.svg?branch=master)](https://travis-ci.org/k-okada/test_catkin_atomic)
 
 Originally discussed in
 
