@@ -56,4 +56,114 @@ script:
   - NUM=$((NUM + 1))
   - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
 
-  
+  # run build again
+  - rm -fr build devel .catkin_tools
+  - catkin init
+  - catkin config ${CATKIN_CONFIG}
+  - catkin config --merge-devel
+  - catkin b -v -i -p 4
+  # check ROS_PAKCAGE_PATH
+  - cat devel/.catkin
+  - source devel/setup.bash
+  - rospack list | grep catkin_ws
+  - export NUM=`sed 's/[^;]//g' devel/.catkin | wc -c`
+  - NUM=$((NUM + 1))
+  - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
+
+  # run build again
+  - rm -fr build devel .catkin_tools
+  - catkin init
+  - catkin config ${CATKIN_CONFIG}
+  - catkin config --merge-devel
+  - catkin b -v -i -p 4
+  # check ROS_PAKCAGE_PATH
+  - cat devel/.catkin
+  - source devel/setup.bash
+  - rospack list | grep catkin_ws
+  - export NUM=`sed 's/[^;]//g' devel/.catkin | wc -c`
+  - NUM=$((NUM + 1))
+  - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
+
+  # run build again
+  - rm -fr build devel .catkin_tools
+  - catkin init
+  - catkin config ${CATKIN_CONFIG}
+  - catkin config --merge-devel
+  - catkin b -v -i -p 4
+  # check ROS_PAKCAGE_PATH
+  - cat devel/.catkin
+  - source devel/setup.bash
+  - rospack list | grep catkin_ws
+  - export NUM=`sed 's/[^;]//g' devel/.catkin | wc -c`
+  - NUM=$((NUM + 1))
+  - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
+
+  # run build again
+  - rm -fr build devel .catkin_tools
+  - catkin init
+  - catkin config ${CATKIN_CONFIG}
+  - catkin config --merge-devel
+  - catkin b -v -i -p 4
+  # check ROS_PAKCAGE_PATH
+  - cat devel/.catkin
+  - source devel/setup.bash
+  - rospack list | grep catkin_ws
+  - export NUM=`sed 's/[^;]//g' devel/.catkin | wc -c`
+  - NUM=$((NUM + 1))
+  - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
+
+  # run build again
+  - rm -fr build devel .catkin_tools
+  - catkin init
+  - catkin config ${CATKIN_CONFIG}
+  - catkin config --merge-devel
+  - catkin b -v -i -p 4
+  # check ROS_PAKCAGE_PATH
+  - cat devel/.catkin
+  - source devel/setup.bash
+  - rospack list | grep catkin_ws
+  - export NUM=`sed 's/[^;]//g' devel/.catkin | wc -c`
+  - NUM=$((NUM + 1))
+  - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
+
+  # run build again
+  - rm -fr build devel .catkin_tools
+  - catkin init
+  - catkin config ${CATKIN_CONFIG}
+  - catkin config --merge-devel
+  - catkin b -v -i -p 4
+  # check ROS_PAKCAGE_PATH
+  - cat devel/.catkin
+  - source devel/setup.bash
+  - rospack list | grep catkin_ws
+  - export NUM=`sed 's/[^;]//g' devel/.catkin | wc -c`
+  - NUM=$((NUM + 1))
+  - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
+
+  # run build again
+  - rm -fr build devel .catkin_tools
+  - catkin init
+  - catkin config ${CATKIN_CONFIG}
+  - catkin config --merge-devel
+  - catkin b -v -i -p 4
+  # check ROS_PAKCAGE_PATH
+  - cat devel/.catkin
+  - source devel/setup.bash
+  - rospack list | grep catkin_ws
+  - export NUM=`sed 's/[^;]//g' devel/.catkin | wc -c`
+  - NUM=$((NUM + 1))
+  - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
+
+  # run build again
+  - rm -fr build devel .catkin_tools
+  - catkin init
+  - catkin config ${CATKIN_CONFIG}
+  - catkin config --merge-devel
+  - catkin b -v -i -p 4
+  # check ROS_PAKCAGE_PATH
+  - cat devel/.catkin
+  - source devel/setup.bash
+  - rospack list | grep catkin_ws
+  - export NUM=`sed 's/[^;]//g' devel/.catkin | wc -c`
+  - NUM=$((NUM + 1))
+  - if [ $NUM != ${NUM_OF_PACKAGES} ] ; then exit 1; fi
